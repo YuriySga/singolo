@@ -115,5 +115,23 @@ h1 {
 margin: auto;
 }
 
+.tool__icon {
+  
+  width: 57px;
+  height: 57px;
+  border-radius: 30px;  
+  border: 2px solid #666d89;
+}
+
+.icon_pen {
+  
+  background: url("assets/pen.svg") no-repeat;
+  width: 33px;
+  height: 33px;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+}
+
 
 
