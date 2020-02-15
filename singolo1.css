@@ -1,13 +1,20 @@
+* {
+  margin: 0;
+}
+
 html {
   font-size: 10px;
   font-family: 'Lato', sans-serif;
 }
 
-* {
+body {
   margin: 0;
+  height: 1200px;
+  width: 1020px;
 }
 
 .header {
+  display: block;
   width: 1020px;
   height: 89px;
   background-color: #737888;
@@ -25,17 +32,31 @@ html {
   background-color: #f06c64;
 }
 
-.services {
-  width: 1020px;
-  height: 495px;
-  background-color: #f2f2f2;
+
+
+.navigation li:nth-child(even) {
+  width: 28px;
 }
+
+
 
 .navigation li {  
   display: inline-block;
+  
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .navigation {
+  letter-spacing: -0.4px;
+  padding: 0;
+  text-align: center;
+ /*margin-right: 4%;*/
+  /*width: 36.5%;*/
+  width: 44%;
   line-height: 6px;
   color: #ffffff;
   font-size: 1.2rem;
@@ -44,14 +65,55 @@ html {
 }
 
 .logo {
-  vertical-align: middle;
-  margin-left: 40px;
+  line-height: 6px;
+  position: relative;
+  left: 40px; 
+  top: 41px; 
+
   color: #ffffff;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 500;
+  
   text-decoration: none;
 }
 
 .logo span {
   color: #f06c64;
 }
+
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+
+}
+
+.services {
+  box-sizing: border-box;
+  padding-top: 68px;
+  padding-left: 4%;
+  color: #666d89;
+  width: 1020px;
+  height: 495px;
+  background-color: #f2f2f2;
+  
+}
+
+.p1 {
+  padding-top: 23px;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #767e9e;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+}
+
+.layout-4-column {
+  display: flex;
+}
+
+.service {
+margin: auto;
+}
+
+
+
