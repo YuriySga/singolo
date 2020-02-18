@@ -172,10 +172,14 @@ height: 36px;
 height: 36px;
 }
 
+.column {
+padding-right: 20px;
+}
 
 
 .service {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .service_column_1 {
@@ -191,6 +195,7 @@ height: 36px;
 }
 
 .service p {
+  word-break: break-all;
   font-size: 12px;
 line-height: 22px;
 font-weight: 400;
