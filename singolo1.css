@@ -66,6 +66,7 @@ body {
 }
 
 .logo {
+  letter-spacing: -0.5px;
   line-height: 6px;
   position: relative;
   left: 40px; 
@@ -167,7 +168,7 @@ height: 36px;
 }
 
 .icon_phone {   
-  background: url("assets/phone.svg"), no-repeat;
+  background: url("assets/phone.svg") no-repeat;
   width: 27px;
 height: 36px;
 }
@@ -204,3 +205,44 @@ margin-top: 10px;
 
 
 
+
+.arrow_left {
+  display: block;
+  background: url("assets/chev.svg") no-repeat;
+  width: 16px;
+  height:27px;  
+  position: absolute;
+  top: 287px;
+  left: 42px;
+}
+
+.arrow_right {
+  display: block;
+  background: url("assets/chev.svg") no-repeat;
+  width: 16px;
+  height:27px; 
+  position: absolute;
+  top: 287px;
+  left: 964px;
+  transform: rotate(180deg);
+}
+
+.wrapper {
+  position: relative;
+}
+
+.iphone_vertical_iphone {
+  display: block;
+  position: relative;
+  width: 100px;
+  height:100px; 
+
+}
+
+.vertical_iphone {
+  position: absolute;
+  
+
+  top: 59px;
+    left: 111px;
+}
