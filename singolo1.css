@@ -9,8 +9,7 @@ html {
 }
 
 body {
-  margin: 0;
-  height: 1200px;
+  margin: 0 auto;
   width: 1020px;
 }
 
@@ -18,11 +17,17 @@ body {
   display: block;
   width: 1020px;
   height: 89px;
-  background-color: #737888;
+  background-color: #2d303a;
+}
+
+.header .wrapper {
+  position: relative;
 }
 
 .header-bottom {
-  width: 1020px;
+  top: 89px;
+  position: absolute;
+  width: 100%;
   height: 6px;
   background-color: #323746;
 }
@@ -33,17 +38,30 @@ body {
   background-color: #f06c64;
 }
 
+.slider .wrapper {
+  position: relative;
+}
 
+.slider-bottom {
+  top: 600px;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: #ea676b;
+}
 
 .navigation li:nth-child(even) {
   width: 28px;
+  cursor: default;
+  color: #494e62;
 }
 
-
+.navigation li:nth-child(odd):hover {  
+  cursor: pointer;  
+}
 
 .navigation li {  
-  display: inline-block;
-  
+  display: inline-block;  
 }
 
 .navigation a {
@@ -51,12 +69,16 @@ body {
   color: #ffffff;
 }
 
+.navigation a:hover {
+  color: #f06c64;
+}
+
 .navigation {
+  user-select: none;
   letter-spacing: -0.4px;
   padding: 0;
   text-align: center;
- /*margin-right: 4%;*/
-  /*width: 36.5%;*/
+  margin-top: 32px;
   width: 44%;
   line-height: 6px;
   color: #ffffff;
@@ -71,11 +93,9 @@ body {
   position: relative;
   left: 40px; 
   top: 41px; 
-
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 500;
-  
   text-decoration: none;
 }
 
@@ -100,8 +120,7 @@ h2 {
   color: #666d89;
   width: 1020px;
   height: 495px;
-  background-color: #f2f2f2;
-  
+  background-color: #f2f2f2;  
 }
 
 .p1 {
@@ -119,7 +138,7 @@ h2 {
 }
 
 .service {
-margin: auto;
+  margin: auto;
 }
 
 .service__icon {
@@ -140,43 +159,42 @@ margin: auto;
 .icon_pen {   
   background: url("assets/pen.svg") no-repeat;
   width: 33px;
-height: 33px;
+  height: 33px;
 }
 
 .icon_star {   
   background: url("assets/star.svg") no-repeat;
   width: 34px;
-height: 32px;
+  height: 32px;
 }
 
 .icon_heart {   
   background: url("assets/heart.svg") no-repeat;
   width: 34px;
-height: 30px;
+  height: 30px;
 }
 
 .icon_bubble {   
   background: url("assets/bubble.svg") no-repeat;
   width: 34px;
-height: 30px;
+  height: 30px;
 }
 
 .icon_lamp {   
   background: url("assets/bulb.svg") no-repeat;
   width: 24px;
-height: 36px;
+  height: 36px;
 }
 
 .icon_phone {   
   background: url("assets/phone.svg") no-repeat;
   width: 27px;
-height: 36px;
+  height: 36px;
 }
 
 .column {
-padding-right: 20px;
+  padding-right: 20px;
 }
-
 
 .service {
   display: flex;
@@ -198,13 +216,10 @@ padding-right: 20px;
 .service p {
   word-break: break-all;
   font-size: 12px;
-line-height: 22px;
-font-weight: 400;
-margin-top: 10px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-top: 10px;
 }
-
-
-
 
 .arrow_left {
   display: block;
@@ -227,22 +242,22 @@ margin-top: 10px;
   transform: rotate(180deg);
 }
 
-.wrapper {
-  position: relative;
+.iphones {
+  position: absolute;
 }
 
-.iphone_vertical_iphone {
-  display: block;
+.arrows {
   position: relative;
-  width: 100px;
-  height:100px; 
-
 }
 
 .vertical_iphone {
   position: absolute;
-  
+  top: -11px;
+  left: 110px;
+}
 
-  top: 59px;
-    left: 111px;
+.horizontal_iphone {
+  position: absolute;
+  top: 75px;
+  left: 360px;
 }
