@@ -16,7 +16,7 @@ body {
 .header {
   display: block;
   width: 1020px;
-  height: 89px;
+  height: 89px;    
   background-color: #2d303a;
 }
 
@@ -25,6 +25,7 @@ body {
 }
 
 .header-bottom {
+  z-index: 1;
   top: 89px;
   position: absolute;
   width: 100%;
@@ -40,14 +41,6 @@ body {
 
 .slider .wrapper {
   position: relative;
-}
-
-.slider-bottom {
-  top: 600px;
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  background-color: #ea676b;
 }
 
 .navigation li:nth-child(even) {
@@ -111,25 +104,6 @@ h1 {
 h2 {
   font-size: 1.8rem;
   line-height: 1.8rem;
-}
-
-.our_services {
-  box-sizing: border-box;
-  padding-top: 68px;
-  padding-left: 4%;
-  color: #666d89;
-  width: 1020px;
-  height: 495px;
-  background-color: #f2f2f2;  
-}
-
-.p1 {
-  padding-top: 21px;
-  font-size: 1.8rem;
-  line-height: 3rem;
-  color: #767e9e;
-  font-weight: 300;
-  letter-spacing: -0.1px;
 }
 
 .layout-3-column {
@@ -252,12 +226,51 @@ h2 {
 
 .vertical_iphone {
   position: absolute;
-  top: -11px;
-  left: 110px;
+  top: 59px;
+  left: 112px;
 }
 
 .horizontal_iphone {
   position: absolute;
-  top: 75px;
-  left: 360px;
+  top: 180px;
+  left: 425px;
+}
+
+.our_services-bottom {
+  position: absolute;
+  width: 1020px;
+  height: 6px;
+  background-color: #ffffff;
+  left: 0px;
+  top: 500px;
+  z-index: 1;
+}
+
+.our_services {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 68px;
+  padding-left: 41px;
+  color: #666d89;
+  width: 1020px;
+  height: 506px;
+  background-color: #f2f2f2f2;  
+}
+
+.slider-bottom {
+  z-index: 1;
+  top: 600px;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: #ea676b;
+}
+
+.our_services h1 + p {
+  padding-top: 21px;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #767e9e;
+  font-weight: 300;
+  letter-spacing: -0.1px;  
 }
