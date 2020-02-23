@@ -13,15 +13,14 @@ body {
   width: 1020px;
 }
 
-.header {
-  display: block;
+.wrapper_header {
+  position: relative;
+  display: flex;
   width: 1020px;
   height: 89px;    
   background-color: #2d303a;
-}
-
-.header .wrapper {
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-bottom {
@@ -33,51 +32,78 @@ body {
   background-color: #323746;
 }
 
-.slider {
+.wrapper_slider {
+  position: relative;
   width: 1020px;
   height: 600px;
   background-color: #f06c64;
 }
 
-.slider .wrapper {
+nav {
+  display: flex;
+  margin-right: 41px;
+  width: 371px;
+  margin-top: 10px; 
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 0.6rem;
+  font-weight: 700;
+  align-items: center;
+  text-decoration: none;
+  width:inherit;
+  padding: 0;
+  list-style-type: none; 
+  letter-spacing: -0.5px;
+}
+
+.navigation li {
+  cursor: pointer;
   position: relative;
 }
 
-.navigation li:nth-child(even) {
-  width: 28px;
+.navigation li:first-child {
+  list-style-type: none;  
+}
+
+.navigation li:nth-child(1)::after { 
+  position: absolute;
+  content: "·"; 
+  left: 50px;
   cursor: default;
   color: #494e62;
 }
 
-.navigation li:nth-child(odd):hover {  
-  cursor: pointer;  
+.navigation li:nth-child(2)::after { 
+  position: absolute;
+  content: "·"; 
+  cursor: default;
+  color: #494e62;
+  left: 67px;
 }
 
-.navigation li {  
-  display: inline-block;  
+.navigation li:nth-child(3)::after { 
+  position: absolute;
+  content: "·"; 
+  cursor: default;
+  color: #494e62;
+  left: 79px;
 }
 
-.navigation a {
-  text-decoration: none;
-  color: #ffffff;
+.navigation li:nth-child(4)::after { 
+  position: absolute;
+  content: "·"; 
+  cursor: default;
+  color: #494e62;
+  left: 55px;
 }
 
-.navigation a:hover {
-  color: #f06c64;
-}
-
-.navigation {
-  user-select: none;
-  letter-spacing: -0.4px;
-  padding: 0;
-  text-align: center;
-  margin-top: 32px;
-  width: 44%;
-  line-height: 6px;
-  color: #ffffff;
-  font-size: 1.2rem;
-  float: right;
-  font-weight: 700;
+.navigation li:last-child::after {
+  content: "";
 }
 
 .logo {
@@ -85,11 +111,11 @@ body {
   line-height: 6px;
   position: relative;
   left: 40px; 
-  top: 41px; 
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 500;
   text-decoration: none;
+  top: -1px;
 }
 
 .logo span {
@@ -172,19 +198,19 @@ h2 {
 
 .service {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 29px;  
 }
 
 .service_column_1 {
-  width: 32.6%;
+  width: 320px;
 }
 
 .service_column_2 {
-  width: 32.7%;
+  width: 320px;
 }
 
 .service_column_3 {
-  width: 32.7%;
+  width: 320px;
 }
 
 .service p {
@@ -246,7 +272,7 @@ h2 {
   z-index: 1;
 }
 
-.our_services {
+.wrapper_our_services {
   position: relative;
   box-sizing: border-box;
   padding-top: 68px;
