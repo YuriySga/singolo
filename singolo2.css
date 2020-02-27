@@ -39,21 +39,148 @@ body {
   display: flex;
   font-size: 1.2rem;
   line-height: 2.0rem;
-  padding: 0;
-  width: 280px;
-  justify-content: space-between;
-
+  padding: 0;  
+  padding-top: 17px;
 }
 
 .portfolio_link li {
-  padding-left: 7px;
-  padding-right: 6px;
   list-style-type: none;
   height: 22px;
   border-radius: 5px;
-  background-color: #0f0f0f;
+  background-color: #2d303a;
   border: 1px solid #666d89;
+  cursor: pointer;
 }
+
+.portfolio_link li:hover {
+  border: 1px solid #dedede;
+  color: white;
+}
+
+.portfolio_link_1 {
+  padding-left: 7px;
+  margin-left: 1px;
+  padding-right: 6px;
+  margin-right: 10px;
+}
+
+.portfolio_link_2 {
+  padding-left: 6px;
+  padding-right: 6px;   
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.portfolio_link_3 {
+  margin-left: 0px;
+  padding-left: 6px;
+  padding-right: 5px;
+  margin-right: 10px;
+}
+
+.portfolio_link_4 {
+  padding-left: 6px;
+  padding-right: 5px;
+}
+
+.image_art {
+  display: flex;
+  margin-top: 19px;
+  background-color: #2d303a;
+  width: 960px;
+  height: 601px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.picture {
+  display: block;
+  /* margin-top: 3px; */
+  width: 220px;
+  height: 187px;
+  /* background-color: #8d0c99; */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* margin: 5px; */
+}
+
+.image_art_1 {
+  background-image: url("assets/img_art/art1.png");
+  width: 220px;
+  height: 187px;
+}
+
+.image_art_2 {
+  background-image: url("assets/img_art/art2.png");
+  width: 220px;
+  height: 187px;
+}
+
+.image_art_3 {
+  background-image: url("assets/img_art/art3.png");
+  width: 220px;
+  height: 187px;
+}
+
+.image_art_4 {
+  background-image: url("assets/img_art/art4.png");
+  width: 220px;
+  height: 187px;
+}
+
+.image_art_5 {
+  background-image: url("assets/img_art/art5.png");
+  width: 220px;
+  height: 187px;
+}
+
+.image_art_6 {
+  background-image: url("assets/img_art/art6.png");
+  width: 220px;
+  height: 187px;
+}
+
+.image_art_7 {
+  background-image: url("assets/img_art/art7.png");
+  width: 220px;
+  height: 187px;
+}
+
+.image_art_8 {
+  background-image: url("assets/img_art/art8.png");
+  width: 220px;
+  height: 187px;
+}
+
+.image_art_9 {
+  background-image: url("assets/img_art/art9.png");
+  width: 220px;
+  height: 187px;
+}
+
+.image_art_10 {
+  background-image: url("assets/img_art/art10.png");
+  width: 220px;
+  height: 187px;
+}
+
+.image_art_11 {
+  background-image: url("assets/img_art/art11.png");
+  width: 220px;
+  height: 187px;
+}
+
+.image_art_12 {
+  background-image: url("assets/img_art/art12.png");
+  width: 220px;
+  height: 187px;
+}
+
+
+
+
+
+
 
 h1 {
   font-size: 3rem;
