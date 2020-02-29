@@ -21,19 +21,26 @@ body {
 }
 
 .portfolio_bottom {
-  background-color: #9298aa;
+  background-color: #323746;
   height: 6px;
 }
 
 .h1_portfolio {
   padding-top: 63px;
   letter-spacing: 0.7px;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #666d89;
 }
 
 .p_portfolio {
   padding-top: 27px;
   letter-spacing: -0.2px;
   color: #767e9e;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
 }
 
 .portfolio_link {
@@ -42,6 +49,7 @@ body {
   line-height: 2.0rem;
   padding: 0;  
   padding-top: 17px;
+  font-weight: 400;
 }
 
 .portfolio_link li {
@@ -97,13 +105,10 @@ body {
 
 .picture {
   display: block;
-  /* margin-top: 3px; */
   width: 220px;
   height: 187px;
-  /* background-color: #8d0c99; */
   margin-right: 20px;
   margin-bottom: 20px;
-  /* margin: 5px; */
 }
 
 .image_art_1 {
@@ -179,9 +184,9 @@ body {
 }
 
 .wrapper_about_us {
+  height: 728px;
   padding-left: 40px;
-  /* background-color: #f2f2f2; */
-  background-color: #f395cc;
+  background-color: #f2f2f2;
   padding-top: 62px;
 }
 
@@ -189,6 +194,8 @@ body {
   color: #666d89;
   font-weight: 900;
   letter-spacing: 0.4px;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 .about_text {
@@ -244,41 +251,58 @@ body {
 .title_photo_column {
   color: #666d89;
   margin-top: 17px;  
+  font-weight: 900;
   font-size: 1.8rem;
   line-height: 1.8rem;
-  font-weight: 900;
 }
 
 .text_photo_column {
   color: #767e9e;
   margin-top: 10px;
   font-size: 1.2rem;
-  line-height: 2.2rem;
+  line-height: 2.1rem;
   font-weight: 400;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.1px;  
+}
+
+.social_media_link {
+  display:block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.social_media_link:hover {
+  cursor: pointer;
 }
 
 .social_media {
   display: flex;
+  padding-left: 1px;
+  padding-top: 24px;
+}
+
+.column_3 .social_media {
+  padding-left: 0px;
 }
 
 .social_Facebook {
-  display:block;
-  background-image: url("assets/");
+  background-image: url("assets/social/facebook.svg");  
 }
 
-h1 {
-  font-size: 3rem;
-  line-height: 3rem;
-  color: #666d89;
+.social_Google {
+  background-image: url("assets/social/google+.svg");
 }
 
-h2 {
-  font-size: 1.8rem;
-  line-height: 1.8rem;
+.social_Twitter {
+  background-image: url("assets/social/twitter.svg");
 }
 
-p {
-  font-size: 1.8rem;
-  line-height: 1.8rem;
+.social_LinkedIn {
+  background-image: url("assets/social/linkedin.svg"); 
+}
+
+.about_us_bottom {
+  background-color: #ffffff;
+  height: 6px;
 }
