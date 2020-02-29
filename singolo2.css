@@ -33,6 +33,7 @@ body {
 .p_portfolio {
   padding-top: 27px;
   letter-spacing: -0.2px;
+  color: #767e9e;
 }
 
 .portfolio_link {
@@ -50,6 +51,7 @@ body {
   background-color: #2d303a;
   border: 1px solid #666d89;
   cursor: pointer;
+  color: #767e9e;
 }
 
 .portfolio_link li:hover {
@@ -176,15 +178,99 @@ body {
   height: 187px;
 }
 
+.wrapper_about_us {
+  padding-left: 40px;
+  /* background-color: #f2f2f2; */
+  background-color: #f395cc;
+  padding-top: 62px;
+}
 
+.about_title {  
+  color: #666d89;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+}
 
+.about_text {
+  margin-top: 21px;
+  font-size: 1.8rem;
+  line-height: 3.0rem;
+  color: #767e9e;
+  font-weight: 300;
+  margin-bottom: 45px;
+  letter-spacing: -0.1px;
+}
 
+.layout-3-column {
+  display: flex;
+}
 
+.column_1 {
+  width:300px;
+  margin-right: 19px;
+}
 
+.column_2 {
+  width:300px;
+  margin-right: 21px;
+}
+
+.column_3 {
+  width:300px;
+  margin-right: 20px;
+}
+
+.photo_column_1 {
+  display:block;
+  background-image: url("assets/photo/adam_jensen.svg");
+  width: 300px;
+  height: 300px;
+}
+
+.photo_column_2 {
+  display:block;
+  background-image: url("assets/photo/desmond_miles.svg");
+  width: 300px;
+  height: 300px;
+}
+
+.photo_column_3 {
+  display:block;
+  background-image: url("assets/photo/scolara_visari.svg");
+  width: 300px;
+  height: 300px;
+}
+
+.title_photo_column {
+  color: #666d89;
+  margin-top: 17px;  
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 900;
+}
+
+.text_photo_column {
+  color: #767e9e;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+}
+
+.social_media {
+  display: flex;
+}
+
+.social_Facebook {
+  display:block;
+  background-image: url("assets/");
+}
 
 h1 {
   font-size: 3rem;
   line-height: 3rem;
+  color: #666d89;
 }
 
 h2 {
