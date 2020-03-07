@@ -84,7 +84,6 @@ textarea {
 
 input::placeholder, textarea::placeholder {
   font-size: 1.2rem;
- /*  line-height: 22px; */
   color: #f48c8f;
   font-weight: 400; 
 }
