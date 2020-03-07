@@ -49,6 +49,7 @@ form {
 }
 
 input {
+  font-size: 1.2rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   padding-left: 14px;
@@ -65,6 +66,7 @@ input {
 }
 
 textarea {
+  font-size: 1.2rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   display: block;
@@ -75,14 +77,14 @@ textarea {
   border: 2px;
   resize: none;
   padding-left: 14px;
-  padding-top: 7px;
+  padding-top: 10px;
   color: #f0d8d9;
   margin-bottom: 16px;
 }
 
 input::placeholder, textarea::placeholder {
   font-size: 1.2rem;
-  line-height: 22px;
+ /*  line-height: 22px; */
   color: #f48c8f;
   font-weight: 400; 
 }
@@ -111,6 +113,12 @@ input::placeholder, textarea::placeholder {
   margin-bottom: 25px;
 }
 
+.text_mail:hover,
+.text_phone:hover,
+.text_adress:hover {
+  text-decoration: underline;
+}
+
 .phone {
   display: flex;
   margin-left: 1px;
@@ -133,6 +141,7 @@ input::placeholder, textarea::placeholder {
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 400;
+  text-decoration: none;
 }
 
 .adress {
@@ -157,6 +166,7 @@ input::placeholder, textarea::placeholder {
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 400;
+  text-decoration: none;
 }
 
 .mail {
@@ -180,6 +190,7 @@ input::placeholder, textarea::placeholder {
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 400;
+  text-decoration: none;
 }
 
 .mail_icon_mail {
