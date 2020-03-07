@@ -250,10 +250,6 @@ input::placeholder, textarea::placeholder {
   background-image: url("assets/social/linkedin.svg"); 
 }
 
-.social_media {
-  padding-left: 0px;
-}
-
 .social_media_link {
   display:block;
   width: 32px;
@@ -268,6 +264,7 @@ input::placeholder, textarea::placeholder {
 .social_media {
   display: flex;
   margin-right: 32px;
+  padding-left: 0px;
 }
 
 .input_submit {
