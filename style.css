@@ -244,6 +244,9 @@ h2 {
   line-height: 22px;
   font-weight: 400;
   margin-top: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 66px;
 }
 
 .arrow_left {
@@ -519,6 +522,9 @@ h2 {
   font-weight: 300;
   margin-bottom: 45px;
   letter-spacing: -0.1px;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
 }
 
 .layout-3-column {
@@ -528,16 +534,19 @@ h2 {
 .column_1 {
   width:300px;
   margin-right: 19px;
+  text-align: justify;
 }
 
 .column_2 {
   width:300px;
   margin-right: 21px;
+  text-align: justify;
 }
 
 .column_3 {
   width:300px;
   margin-right: 20px;
+  text-align: justify;
 }
 
 .photo_column_1 {
@@ -567,6 +576,9 @@ h2 {
   font-weight: 900;
   font-size: 1.8rem;
   line-height: 1.8rem;
+  width: 100%;
+  overflow: hidden;
+  height: 18px;
 }
 
 .text_photo_column {
@@ -577,6 +589,9 @@ h2 {
   font-weight: 400;
   letter-spacing: -0.1px;  
   margin-bottom: 24px;
+  overflow: hidden;
+  width: 100%;
+  height: 42px;
 }
 
 .social_media_link {
@@ -694,6 +709,7 @@ input::placeholder, textarea::placeholder {
 
 .contact_information {
   width: 300px;
+  text-align: justify;
 }
 
 .h2_contact_information {
@@ -878,9 +894,32 @@ input::placeholder, textarea::placeholder {
 }
 
 .feel_like_a_star_content {
+  text-align: justify;
   margin-left: 2px;
 }
 
 .love_is_the_answer_content {
+  text-align: justify;
   margin-left: 2px;
+}
+
+.custom_design_content {
+  text-align: justify;
+}
+
+.responsive_layout_content { 
+   text-align: justify;
+}
+
+.inovative_ideas_content {
+  text-align: justify;
+}
+
+.support_content {  
+  text-align: justify;
+}
+
+.p1 {
+  height: 81px;
+  overflow: hidden;
 }
