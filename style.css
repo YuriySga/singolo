@@ -1,3 +1,8 @@
+@font-face { 
+  font-family: "Lato";
+  src: url(assets/fonts/Lato-Regular.ttf) format("truetype");
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -146,8 +151,6 @@ h2 {
 }
 
 .service__icon {
-  padding-top: 11px;
-  padding-left: 11px;
   margin-top: 2px;
   margin-right: 20px;
   width: 59px;
@@ -157,21 +160,25 @@ h2 {
 }
 
 .icon {  
-  display: block;
+  display: block;  
 }
 
 .icon_pen {   
   background-image: url("assets/pen.svg");
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   width: 33px;
   height: 33px;
+  margin-top: 11px;
+  margin-left: 11px;
 }
 
 .icon_star {   
   background-image: url("assets/star.svg");
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   width: 34px;
   height: 32px;
+  margin-left: 10px;
+  margin-top: 11px;
 }
 
 .icon_heart {   
@@ -179,6 +186,8 @@ h2 {
   background-repeat: no-repeat;
   width: 34px;
   height: 30px;
+  margin-top: 12px;
+  margin-left: 10px;
 }
 
 .icon_bubble {   
@@ -186,6 +195,8 @@ h2 {
   background-repeat: no-repeat;
   width: 34px;
   height: 30px;
+  margin-top: 13px;
+  margin-left: 11px;
 }
 
 .icon_lamp {   
@@ -193,13 +204,17 @@ h2 {
   background-repeat: no-repeat;
   width: 24px;
   height: 36px;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 .icon_phone {   
-  background-repeat: no-repeat;
   background-image: url("assets/phone.svg");
+  background-repeat: no-repeat;
   width: 27px;
   height: 36px;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
 .column_our_services {

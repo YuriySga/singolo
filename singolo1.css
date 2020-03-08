@@ -1,3 +1,8 @@
+@font-face { 
+  font-family: "Lato";
+  src: url(assets/fonts/Lato-Regular.ttf) format("truetype");
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -155,45 +160,61 @@ h2 {
 }
 
 .icon {  
-  display: block;
-  margin: auto;
-  margin-top: 11px;
+  display: block;  
 }
 
 .icon_pen {   
-  background: url("assets/pen.svg") no-repeat;
+  background-image: url("assets/pen.svg");
+  background-repeat:no-repeat;
   width: 33px;
   height: 33px;
+  margin-top: 11px;
+  margin-left: 11px;
 }
 
 .icon_star {   
-  background: url("assets/star.svg") no-repeat;
+  background-image: url("assets/star.svg");
+  background-repeat:no-repeat;
   width: 34px;
   height: 32px;
+  margin-left: 10px;
+  margin-top: 11px;
 }
 
 .icon_heart {   
-  background: url("assets/heart.svg") no-repeat;
+  background-image: url("assets/heart.svg");
+  background-repeat: no-repeat;
   width: 34px;
   height: 30px;
+  margin-top: 12px;
+  margin-left: 10px;
 }
 
 .icon_bubble {   
-  background: url("assets/bubble.svg") no-repeat;
+  background-image: url("assets/bubble.svg");
+  background-repeat: no-repeat;
   width: 34px;
   height: 30px;
+  margin-top: 13px;
+  margin-left: 11px;
 }
 
 .icon_lamp {   
-  background: url("assets/bulb.svg") no-repeat;
+  background-image: url("assets/bulb.svg");
+  background-repeat: no-repeat;
   width: 24px;
   height: 36px;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 .icon_phone {   
-  background: url("assets/phone.svg") no-repeat;
+  background-image: url("assets/phone.svg");
+  background-repeat: no-repeat;
   width: 27px;
   height: 36px;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
 .column {
@@ -206,7 +227,7 @@ h2 {
 }
 
 .service_column_1 {
-  width: 320px;
+  width: 319px;
 }
 
 .service_column_2 {
