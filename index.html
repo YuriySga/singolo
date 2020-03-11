@@ -7,16 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="wrapper_header">
       <a class="logo" href="#">SINGOLO<span>*</span></a>
       <nav>
-        <ul class="navigation">
-          <li>HOME</li>                       
-          <li>SERVICES</li>            
-          <li>PORTFOLIO</li>            
-          <li>ABOUT</li>            
-          <li>CONTACT</li>
+        <ul class="navigation" id="menu">
+            <li><a class="active" href="#header">HOME</a></li>  
+            <li><a href="#our_services">SERVICES</a></li> 
+            <li><a href="#portfolio"> PORTFOLIO</a></li> 
+            <li><a href="#about_us">ABOUT</a></li>
+            <li><a href="#get_a_quote">CONTACT</a></li>
         </ul>
       </nav>
       <div class="header-bottom"></div>
@@ -35,7 +35,7 @@
       <div class="slider-bottom"></div>
     </div>
   </section> 
-  <section class="our_services">
+  <section class="our_services" id="our_services">
     <div class="wrapper_our_services">
       <h1>Our Services</h1>
       <p class="p1">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -116,7 +116,7 @@
     <div class="our_services-bottom"></div>
     </div>
   </section> 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="wrapper_portfolio">
       <h1 class="h1_portfolio">Portfolio</h1>
       <p class="p_portfolio">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -147,7 +147,7 @@
     </div>
     <div class="portfolio_bottom"></div>
   </section>
-  <section class="about_us">
+  <section class="about_us" id="about_us">
     <div class="wrapper_about_us">
       <h1 class="about_title">About Us</h1>
       <p class="about_text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -189,7 +189,7 @@
     </div>
     <div class="about_us_bottom"></div>
   </section>
-  <section class="get_a_quote">
+  <section class="get_a_quote" id="get_a_quote">
     <div class="wrapper_get_a_quote">      
       <h1 class="h1_get_a_quote">Get a Quote</h1>
       <p class="p_get_a_quote">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -239,5 +239,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
