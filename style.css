@@ -282,17 +282,67 @@ h2 {
   position: relative;
 }
 
-.vertical_iphone {
+/* .vertical_iphone {
   position: absolute;
   top: 59px;
   left: 112px;
+} */
+
+.iphones_slide1 {
+  /* display: none; */
+
+  position: absolute;
+  /* top: 59px;
+  left: 111px; */
+  top: 59px;
+  left: 1131px;
 }
 
-.horizontal_iphone {
+.vertical_display_image {
+  display: none;
+
+  z-index: 999;
+  position: absolute;
+  width: 188px;
+  height: 333px;
+  top: 124px;
+  left: 126px;
+  overflow: hidden;
+  background-image: url("assets/task_dom/display_vertical.png");
+  background-repeat: no-repeat;
+  background-position-x: -14px;
+  background-position-y: -135px;
+}
+
+.horizontal_display_image {
+  display: none;
+
+  z-index: 999;
+  position: absolute;
+  width: 333px;
+  height: 188px;
+  top: 194px;
+  left: 485px;
+  overflow: hidden;
+  background-image: url('assets/task_dom/display_horizontal.png');
+  background-repeat: no-repeat;
+  background-position-x: -125px;
+  background-position-y: -119px;
+}
+
+.slide2 {
+  position: absolute;
+ /*  top: 49px;
+  left: 252px; */
+  top: 49px;
+  left: 252px;
+}
+
+/* .horizontal_iphone {
   position: absolute;
   top: 180px;
   left: 425px;
-}
+} */
 
 .our_services-bottom {
   position: absolute;
