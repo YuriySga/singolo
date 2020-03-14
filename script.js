@@ -1,8 +1,9 @@
 const MENU = document.getElementById("menu");
 const IPHONES =  document.getElementById("iphones");
 const WRAPPERSLIDER = document.getElementById("wrapper_slider");
-const VDISPLAY = document.getElementById("vertical_display_image");
-const HDISPLAY = document.getElementById("horizontal_display_image");
+const MENU_PORTFOLIO = document.getElementById("portfolio_link");
+const IMAGE_PORTFOLIO = document.getElementById("image_art");
+
 
 ////Header
 MENU.addEventListener('click', (event) => {
@@ -86,7 +87,31 @@ function horizontal_display(){
   } else HDISPLAY.style.opacity = "0";
 }
 
-//
+//Portfolio image art
+MENU_PORTFOLIO.addEventListener('click', (event) => {
+  MENU_PORTFOLIO.querySelectorAll('li').forEach(el => el.classList.remove('activePortfolio'));
+  event.target.classList.add('activePortfolio');
+}); 
+
+function random() {
+  let slidesPortfolio = document.querySelectorAll('.picture');
+  slidesPortfolio.forEach((item, index) => {
+    if (Math.random() > 0.5) { 
+      image_art.append(slidesPortfolio[index]);
+    }
+  });
+}
+
+//Portfolio image border
+
+IMAGE_PORTFOLIO.addEventListener('click', (event) => {
+  IMAGE_PORTFOLIO.querySelectorAll('div').forEach(el => el.classList.remove('activePortfolioImage'));
+  event.target.classList.add('activePortfolioImage');
+}); 
+
+
+
+
 
 
 

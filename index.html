@@ -127,15 +127,15 @@
       <h1 class="h1_portfolio">Portfolio</h1>
       <p class="p_portfolio">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
       <div>
-        <ul class="portfolio_link">
-          <li class="portfolio_link_1">All</li>
-          <li class="portfolio_link_2">Web Design</li>
-          <li class="portfolio_link_3">Graphic Design</li>
-          <li class="portfolio_link_4">Artwork</li>
+        <ul class="portfolio_link" id="portfolio_link">
+          <li class="portfolio_link_1 activePortfolio" onclick="random()">All</li>
+          <li class="portfolio_link_2" onclick="random()">Web Design</li>
+          <li class="portfolio_link_3" onclick="random()">Graphic Design</li>
+          <li class="portfolio_link_4" onclick="random()">Artwork</li>
         </ul>
       </div>
       <div>
-        <div class="image_art">
+        <div class="image_art" id="image_art">
           <div class="picture image_art_1"></div>
           <div class="picture image_art_2"></div>
           <div class="picture image_art_3"></div>
@@ -227,6 +227,16 @@
               <span class="contact_information_icon_mail"></span>
             </div>
             <a class="text_mail" href="mailto:info@singolo.com">info@singolo.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="pop_up_msg" id="pop_up_msg">
+        <div class="wrapper_pop_up_msg">
+          <div class="window_pop_up_msg">
+            <p>Письмо отправлено</p> 
+            <p><span>Тема: </span></p> 
+            <p><span>Описание: </span></p> 
+            <button>OK</button> 
           </div>
         </div>
       </div>

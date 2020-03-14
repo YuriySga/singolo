@@ -471,6 +471,11 @@ h2 {
   color: white;
 }
 
+#portfolio_link .activePortfolio {
+  border: 1px solid #dedede;
+  color: white;
+}
+
 .portfolio_link_1 {
   padding-left: 7px;
   margin-left: 1px;
@@ -513,6 +518,10 @@ h2 {
   height: 187px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+#image_art .activePortfolioImage {
+  border: 5px solid #F06C64;
 }
 
 .image_art_1 {
@@ -1023,3 +1032,11 @@ input::placeholder, textarea::placeholder {
   color: #f06c64;
 }
 
+.pop_up_msg {
+  display: block;
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  background-color: #f06c64;
+  #0008;
+}
