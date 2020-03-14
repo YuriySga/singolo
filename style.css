@@ -39,10 +39,12 @@ body {
 }
 
 .wrapper_slider {
+  overflow: hidden;
   position: relative;
   width: 1020px;
   height: 600px;
   background-color: #f06c64;
+  transition: background-color 0.5s ease;
 }
 
 nav {
@@ -261,6 +263,7 @@ h2 {
   position: absolute;
   top: 287px;
   left: 42px;
+  z-index: 100;
 }
 
 .arrow_right {
@@ -272,10 +275,38 @@ h2 {
   top: 287px;
   left: 964px;
   transform: rotate(180deg);
+  z-index: 100;
 }
 
 .iphones {
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+}
+
+.slide1 {
   position: absolute;
+  height: 100%;
+  width: 100%;
+/*   transition: left 0.5s ease;
+ */
+}
+
+.slide {
+  transition: left 0.5s ease;
+  left:0;  
+}
+ 
+.slide_position_center {
+  left : 0;  
+}
+
+.slide_position_left {
+  left : -100%;
+}
+
+.slide_position_right {
+  left : 100%;
 }
 
 .arrows {
@@ -292,15 +323,33 @@ h2 {
   /* display: none; */
 
   position: absolute;
-  /* top: 59px;
-  left: 111px; */
   top: 59px;
-  left: 1131px;
+  left: 111px;
+  /* top: 59px;
+  left: 1131px; */
 }
 
-.vertical_display_image {
-  display: none;
+.iphones_slide2 {
+  position: absolute;
+  top: 49px;
+  left: 252px
+}
 
+
+
+.slide2 {
+ /*  top: 49px;
+  left: 252px; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+/*   transition: left 0.5s ease;
+ */  
+}
+
+
+.vertical_display_image {
+  transition: opacity 0.5s ease;
   z-index: 999;
   position: absolute;
   width: 188px;
@@ -315,8 +364,7 @@ h2 {
 }
 
 .horizontal_display_image {
-  display: none;
-
+  transition: opacity 0.5s ease;
   z-index: 999;
   position: absolute;
   width: 333px;
@@ -329,20 +377,6 @@ h2 {
   background-position-x: -125px;
   background-position-y: -119px;
 }
-
-.slide2 {
-  position: absolute;
- /*  top: 49px;
-  left: 252px; */
-  top: 49px;
-  left: 252px;
-}
-
-/* .horizontal_iphone {
-  position: absolute;
-  top: 180px;
-  left: 425px;
-} */
 
 .our_services-bottom {
   position: absolute;
