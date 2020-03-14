@@ -730,6 +730,7 @@ h2 {
 
 
 .wrapper_get_a_quote {
+  position: relative;
   padding-left: 40px;
   background-color: #f06c64;
   color: #f0d8d9;
@@ -1032,11 +1033,60 @@ input::placeholder, textarea::placeholder {
   color: #f06c64;
 }
 
-.pop_up_msg {
+/* .wrapper_pop_up_msg {
+  background-color: #0008;
+  width: 100%;
+  height: 100%;
+}
+
+.window_pop_up_msg {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   opacity: 1;
   background-color: #f06c64;
-  #0008;
+} */
+.window_pop_up_msg {
+  display: block;
+  border:2px solid #e99fa1;
+  border-radius: 20px;
+  text-align:center;
+  font-size: 1.6rem;
+  margin: auto;
+  margin-top: 260px;
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  background-color: #f06c64;
+
+}
+
+.pop_up_msg {
+  display: none;
+  position: absolute;
+  width: 1020px;
+  height: 100vh;
+  top: -100px;
+  left: 0px;
+  background-color: #0008;
+}
+
+.get_a_quote {
+  position: relative;
+}
+
+.pop_up_header {
+  margin-top: 25px;
+}
+
+.pop_up_subject {
+  margin-top: 25px;
+}
+
+.pop_up_text {
+  margin-top: 20px;
+}
+
+.pop_up_button {
+  margin-top: 90px;
 }

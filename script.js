@@ -3,15 +3,19 @@ const IPHONES =  document.getElementById("iphones");
 const WRAPPERSLIDER = document.getElementById("wrapper_slider");
 const MENU_PORTFOLIO = document.getElementById("portfolio_link");
 const IMAGE_PORTFOLIO = document.getElementById("image_art");
+const SUBMIT_BTN = document.getElementById("submit");
+const FORM = document.getElementById("form");
 
 
 ////Header
+
 MENU.addEventListener('click', (event) => {
   MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
   event.target.classList.add('active');
 }); 
 
 ////Slider
+
 let slides = document.querySelectorAll('.slide');
 let slideArr =[];
 slideArr.push(slides[1].cloneNode(true));
@@ -88,6 +92,7 @@ function horizontal_display(){
 }
 
 //Portfolio image art
+
 MENU_PORTFOLIO.addEventListener('click', (event) => {
   MENU_PORTFOLIO.querySelectorAll('li').forEach(el => el.classList.remove('activePortfolio'));
   event.target.classList.add('activePortfolio');
@@ -109,7 +114,29 @@ IMAGE_PORTFOLIO.addEventListener('click', (event) => {
   event.target.classList.add('activePortfolioImage');
 }); 
 
+//Get a quote
 
+FORM.addEventListener('submit', (event) => {
+  event.preventDefault();
+  let formSubject =  document.querySelector(".input_subject");
+  let formDetail =  document.querySelector(".textarea_detail");
+
+  let pop_up_subject_area = document.querySelector(".pop_up_subject");
+  let pop_up_text_area = document.querySelector(".pop_up_text");
+
+  if (formSubject.value == '') {
+    pop_up_subject_area.innerHTML = 'Без темы';
+  } else {
+    pop_up_subject_area.innerHTML = formSubject.value;
+  }
+
+  if (formDetail.value == '') {
+    pop_up_text_area.innerHTML = 'Без описания';
+  } else {
+    pop_up_text_area.innerHTML = formDetail.value;
+  }
+  document.querySelector(".pop_up_msg").style.display = "block";
+}); 
 
 
 

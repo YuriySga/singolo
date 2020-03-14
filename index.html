@@ -200,12 +200,12 @@
       <h1 class="h1_get_a_quote">Get a Quote</h1>
       <p class="p_get_a_quote">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <div class="layout-2-column">
-        <form>       
+        <form id="form">       
           <input class="input_name" required type="text" placeholder="Name (Required)" maxlength="70" name="name">
           <input class="input_email" required type="email" placeholder="Email (Required)" maxlength="70" name="email">
           <input class="input_subject" type="text" placeholder="Subject" maxlength="70" name="subject">
           <textarea class="textarea_detail" placeholder="Describe your project in detail..." name="detail"></textarea> 
-          <input class="input_submit" type="submit" value="send">
+          <input class="input_submit" id="submit" type="submit" value="send">
         </form>
         <div class="contact_information">
           <h2 class="h2_contact_information">Contact Information</h2>
@@ -229,17 +229,17 @@
             <a class="text_mail" href="mailto:info@singolo.com">info@singolo.com</a>
           </div>
         </div>
-      </div>
-      <div class="pop_up_msg" id="pop_up_msg">
-        <div class="wrapper_pop_up_msg">
-          <div class="window_pop_up_msg">
-            <p>Письмо отправлено</p> 
-            <p><span>Тема: </span></p> 
-            <p><span>Описание: </span></p> 
-            <button>OK</button> 
-          </div>
+      </div>     
+    </div>
+    <div class="pop_up_msg" id="pop_up_msg">
+     
+        <div class='window_pop_up_msg'>
+          <p class='pop_up_header'>Письмо отправлено</p> 
+          <p class='pop_up_subject'><span>Тема: </span></p> 
+          <p class='pop_up_text'><span>Описание: </span></p> 
+          <button class='pop_up_button'>OK</button> 
         </div>
-      </div>
+      
     </div>
     <div class="bottom_get_a_quote"></div>
   </section>
