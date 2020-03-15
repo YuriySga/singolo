@@ -1,6 +1,6 @@
 @font-face { 
-  font-family: "Lato";
-  src: url(assets/fonts/Lato-Regular.ttf) format("truetype");
+  font-family: 'Lato';
+  src: url(assets/fonts/Lato-Regular.ttf) format('truetype');
 }
 
 * {
@@ -77,17 +77,13 @@ nav {
   position: relative;
 }
 
-/* .navigation li:hover {
-  color: #f06c64;
-} */
-
 .navigation li:first-child {
   list-style-type: none;  
 }
 
 .navigation li:nth-child(1)::after { 
   position: absolute;
-  content: "·"; 
+  content: '·'; 
   left: 50px;
   cursor: default;
   color: #494e62;
@@ -95,7 +91,7 @@ nav {
 
 .navigation li:nth-child(2)::after { 
   position: absolute;
-  content: "·"; 
+  content: '·'; 
   cursor: default;
   color: #494e62;
   left: 67px;
@@ -103,7 +99,7 @@ nav {
 
 .navigation li:nth-child(3)::after { 
   position: absolute;
-  content: "·"; 
+  content: '·'; 
   cursor: default;
   color: #494e62;
   left: 79px;
@@ -111,14 +107,14 @@ nav {
 
 .navigation li:nth-child(4)::after { 
   position: absolute;
-  content: "·"; 
+  content: '·'; 
   cursor: default;
   color: #494e62;
   left: 55px;
 }
 
 .navigation li:last-child::after {
-  content: "";
+  content: '';
 }
 
 .logo {
@@ -170,7 +166,7 @@ h2 {
 }
 
 .icon_pen {   
-  background-image: url("assets/pen.svg");
+  background-image: url('assets/pen.svg');
   background-repeat:no-repeat;
   width: 33px;
   height: 33px;
@@ -179,7 +175,7 @@ h2 {
 }
 
 .icon_star {   
-  background-image: url("assets/star.svg");
+  background-image: url('assets/star.svg');
   background-repeat:no-repeat;
   width: 34px;
   height: 32px;
@@ -188,7 +184,7 @@ h2 {
 }
 
 .icon_heart {   
-  background-image: url("assets/heart.svg");
+  background-image: url('assets/heart.svg');
   background-repeat: no-repeat;
   width: 34px;
   height: 30px;
@@ -197,7 +193,7 @@ h2 {
 }
 
 .icon_bubble {   
-  background-image: url("assets/bubble.svg");
+  background-image: url('assets/bubble.svg');
   background-repeat: no-repeat;
   width: 34px;
   height: 30px;
@@ -206,7 +202,7 @@ h2 {
 }
 
 .icon_lamp {   
-  background-image: url("assets/bulb.svg");
+  background-image: url('assets/bulb.svg');
   background-repeat: no-repeat;
   width: 24px;
   height: 36px;
@@ -215,7 +211,7 @@ h2 {
 }
 
 .icon_phone {   
-  background-image: url("assets/phone.svg");
+  background-image: url('assets/phone.svg');
   background-repeat: no-repeat;
   width: 27px;
   height: 36px;
@@ -257,7 +253,7 @@ h2 {
 
 .arrow_left {
   display: block;
-  background: url("assets/chev.svg") no-repeat;
+  background: url('assets/chev.svg') no-repeat;
   width: 16px;
   height:27px;  
   position: absolute;
@@ -268,7 +264,7 @@ h2 {
 
 .arrow_right {
   display: block;
-  background: url("assets/chev.svg") no-repeat;
+  background: url('assets/chev.svg') no-repeat;
   width: 16px;
   height:27px; 
   position: absolute;
@@ -278,8 +274,28 @@ h2 {
   z-index: 100;
 }
 
+.horizontal_sensor {
+  display: block;
+  z-index: 6;
+  position: absolute;
+  top: 180px;
+  left: 425px;
+  width: 458px;
+  height: 216px;
+  
+}
+
+.vertical_sensor {
+  display: block;
+  z-index: 6;
+  position: absolute; 
+  top: 59px;
+  left: 112px;
+  width: 216px;
+  height: 458px;
+}
+
 .iphones {
-  /* position: absolute; */
   height: 100%;
   width: 100%;
 }
@@ -288,8 +304,6 @@ h2 {
   position: absolute;
   height: 100%;
   width: 100%;
-/*   transition: left 0.5s ease;
- */
 }
 
 .slide {
@@ -313,20 +327,11 @@ h2 {
   position: relative;
 }
 
-/* .vertical_iphone {
-  position: absolute;
-  top: 59px;
-  left: 112px;
-} */
-
 .iphones_slide1 {
-  /* display: none; */
-
   position: absolute;
   top: 59px;
   left: 111px;
-  /* top: 59px;
-  left: 1131px; */
+  user-select: none;
 }
 
 .iphones_slide2 {
@@ -335,29 +340,22 @@ h2 {
   left: 252px
 }
 
-
-
 .slide2 {
- /*  top: 49px;
-  left: 252px; */
   position: absolute;
   height: 100%;
   width: 100%;
-/*   transition: left 0.5s ease;
- */  
 }
-
 
 .vertical_display_image {
   transition: opacity 0.5s ease;
-  z-index: 999;
+  z-index: 5;
   position: absolute;
   width: 188px;
   height: 333px;
   top: 124px;
   left: 126px;
   overflow: hidden;
-  background-image: url("assets/task_dom/display_vertical.png");
+  background-image: url('assets/task_dom/display_vertical.png');
   background-repeat: no-repeat;
   background-position-x: -14px;
   background-position-y: -135px;
@@ -365,7 +363,7 @@ h2 {
 
 .horizontal_display_image {
   transition: opacity 0.5s ease;
-  z-index: 999;
+  z-index: 5;
   position: absolute;
   width: 333px;
   height: 188px;
@@ -525,73 +523,73 @@ h2 {
 }
 
 .image_art_1 {
-  background-image: url("assets/img_art/art1.png");
+  background-image: url('assets/img_art/art1.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_2 {
-  background-image: url("assets/img_art/art2.png");
+  background-image: url('assets/img_art/art2.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_3 {
-  background-image: url("assets/img_art/art3.png");
+  background-image: url('assets/img_art/art3.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_4 {
-  background-image: url("assets/img_art/art4.png");
+  background-image: url('assets/img_art/art4.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_5 {
-  background-image: url("assets/img_art/art5.png");
+  background-image: url('assets/img_art/art5.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_6 {
-  background-image: url("assets/img_art/art6.png");
+  background-image: url('assets/img_art/art6.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_7 {
-  background-image: url("assets/img_art/art7.png");
+  background-image: url('assets/img_art/art7.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_8 {
-  background-image: url("assets/img_art/art8.png");
+  background-image: url('assets/img_art/art8.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_9 {
-  background-image: url("assets/img_art/art9.png");
+  background-image: url('assets/img_art/art9.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_10 {
-  background-image: url("assets/img_art/art10.png");
+  background-image: url('assets/img_art/art10.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_11 {
-  background-image: url("assets/img_art/art11.png");
+  background-image: url('assets/img_art/art11.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_12 {
-  background-image: url("assets/img_art/art12.png");
+  background-image: url('assets/img_art/art12.png');
   width: 220px;
   height: 187px;
 }
@@ -648,21 +646,21 @@ h2 {
 
 .photo_column_1 {
   display:block;
-  background-image: url("assets/photo/adam_jensen.svg");
+  background-image: url('assets/photo/adam_jensen.svg');
   width: 300px;
   height: 300px;
 }
 
 .photo_column_2 {
   display:block;
-  background-image: url("assets/photo/desmond_miles.svg");
+  background-image: url('assets/photo/desmond_miles.svg');
   width: 300px;
   height: 300px;
 }
 
 .photo_column_3 {
   display:block;
-  background-image: url("assets/photo/scolara_visari.svg");
+  background-image: url('assets/photo/scolara_visari.svg');
   width: 300px;
   height: 300px;
 }
@@ -708,19 +706,19 @@ h2 {
 }
 
 .social_Facebook {
-  background-image: url("assets/social/facebook.svg");  
+  background-image: url('assets/social/facebook.svg');  
 }
 
 .social_Google {
-  background-image: url("assets/social/google+.svg");
+  background-image: url('assets/social/google+.svg');
 }
 
 .social_Twitter {
-  background-image: url("assets/social/twitter.svg");
+  background-image: url('assets/social/twitter.svg');
 }
 
 .social_LinkedIn {
-  background-image: url("assets/social/linkedin.svg"); 
+  background-image: url('assets/social/linkedin.svg'); 
 }
 
 .about_us_bottom {
@@ -748,7 +746,7 @@ h2 {
 }
 
 .p_get_a_quote { 
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 3rem;
   font-size: 1.8rem;
   letter-spacing: -0.1px;
@@ -767,7 +765,7 @@ form {
 
 input {
   font-size: 1.2rem;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   padding-left: 14px;
   display: block;
@@ -784,7 +782,7 @@ input {
 
 textarea {
   font-size: 1.2rem;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   display: block;
   width: 100%;
@@ -814,7 +812,7 @@ input::placeholder, textarea::placeholder {
   font-size: 1.8rem;
   line-height: 1.8rem;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 900;  
   letter-spacing: 0.2px;
   margin-bottom: 10px;
@@ -824,7 +822,7 @@ input::placeholder, textarea::placeholder {
   font-size: 1.2rem;
   line-height: 2.2rem;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 400;
   letter-spacing: -0.2px;
   margin-bottom: 25px;
@@ -845,7 +843,7 @@ input::placeholder, textarea::placeholder {
 
 .contact_information_icon_phone {
   display: block;
-  background-image: url("assets/singolo3/phone.svg");
+  background-image: url('assets/singolo3/phone.svg');
   width: 13px;
   height: 12px;
   background-repeat: no-repeat;
@@ -856,7 +854,7 @@ input::placeholder, textarea::placeholder {
   font-size: 1.2rem;
   line-height: 1.2rem;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 400;
   text-decoration: none;
 }
@@ -868,7 +866,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .contact_information_icon_adress {
-  background-image: url("assets/singolo3/location.svg");
+  background-image: url('assets/singolo3/location.svg');
   display: block;
   width: 7px;
   height: 12px;
@@ -881,7 +879,7 @@ input::placeholder, textarea::placeholder {
   font-size: 1.2rem;
   line-height: 1.2rem;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 400;
   text-decoration: none;
 }
@@ -892,7 +890,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .contact_information_icon_mail {
-  background-image: url("assets/singolo3/mail.svg");
+  background-image: url('assets/singolo3/mail.svg');
   display: block;
   width: 13px;
   height: 13px;
@@ -905,7 +903,7 @@ input::placeholder, textarea::placeholder {
   font-size: 1.2rem;
   line-height: 1.2rem;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 400;
   text-decoration: none;
 }
@@ -953,19 +951,19 @@ input::placeholder, textarea::placeholder {
 }
 
 .social_Facebook {
-  background-image: url("assets/social/facebook.svg");  
+  background-image: url('assets/social/facebook.svg');  
 }
 
 .social_Google {
-  background-image: url("assets/social/google+.svg");
+  background-image: url('assets/social/google+.svg');
 }
 
 .social_Twitter {
-  background-image: url("assets/social/twitter.svg");
+  background-image: url('assets/social/twitter.svg');
 }
 
 .social_LinkedIn {
-  background-image: url("assets/social/linkedin.svg"); 
+  background-image: url('assets/social/linkedin.svg'); 
 }
 
 .social_media_link {
@@ -1022,9 +1020,6 @@ input::placeholder, textarea::placeholder {
   overflow: hidden;
 }
 
-/* ///////////////////////////////////////////////////////// */
-/* ///////////////////////////////////////////////////////// */
-
 .navigation a.active {
   color: #f06c64;
 }
@@ -1033,19 +1028,6 @@ input::placeholder, textarea::placeholder {
   color: #f06c64;
 }
 
-/* .wrapper_pop_up_msg {
-  background-color: #0008;
-  width: 100%;
-  height: 100%;
-}
-
-.window_pop_up_msg {
-  display: block;
-  width: 400px;
-  height: 400px;
-  opacity: 1;
-  background-color: #f06c64;
-} */
 .window_pop_up_msg {
   display: block;
   border:2px solid #e99fa1;
@@ -1054,21 +1036,22 @@ input::placeholder, textarea::placeholder {
   font-size: 1.6rem;
   margin: auto;
   margin-top: 260px;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   opacity: 1;
   background-color: #f06c64;
-
+  overflow: hidden;
 }
 
 .pop_up_msg {
+  z-index: 1000;
   display: none;
-  position: absolute;
-  width: 1020px;
+  position: fixed;
+  width: 100vw;
   height: 100vh;
-  top: -100px;
-  left: 0px;
-  background-color: #0008;
+  top: 0;
+  left: 0;
+  background-color: #0008;  
 }
 
 .get_a_quote {
@@ -1081,12 +1064,29 @@ input::placeholder, textarea::placeholder {
 
 .pop_up_subject {
   margin-top: 25px;
+  width: 396px;
+  height: 57px;
+  word-break: break-all;
 }
 
 .pop_up_text {
   margin-top: 20px;
+  word-break: break-all;
+  overflow: hidden;
+  width: 396px;
+  height: 170px;
 }
 
 .pop_up_button {
-  margin-top: 90px;
+  cursor: pointer;
+  margin-top: 30px;
+  color: #f0d8d9;
+  background-color: #d6564f;
+  border: 2px;
+  border-radius: 5px;
+  height: 38px;
+  width: 120px;
+  font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }

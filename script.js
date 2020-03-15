@@ -1,11 +1,10 @@
-const MENU = document.getElementById("menu");
-const IPHONES =  document.getElementById("iphones");
-const WRAPPERSLIDER = document.getElementById("wrapper_slider");
-const MENU_PORTFOLIO = document.getElementById("portfolio_link");
-const IMAGE_PORTFOLIO = document.getElementById("image_art");
-const SUBMIT_BTN = document.getElementById("submit");
-const FORM = document.getElementById("form");
-
+const MENU = document.getElementById('menu');
+const IPHONES =  document.getElementById('iphones');
+const WRAPPERSLIDER = document.getElementById('wrapper_slider');
+const MENU_PORTFOLIO = document.getElementById('portfolio_link');
+const IMAGE_PORTFOLIO = document.getElementById('image_art');
+const SUBMIT_BTN = document.getElementById('submit');
+const FORM = document.getElementById('form');
 
 ////Header
 
@@ -43,7 +42,6 @@ function left() {
     offset2++;  
   }   
   setTimeout(function() {
-    console.log(slideArr2);
     arr2.push(slideArr2[1]);
     arr2.push(slideArr2[2]);
     arr2.push(slideArr2[1].cloneNode(true)); 
@@ -61,7 +59,6 @@ function right() {
     offset2++;  
     } 
     setTimeout(function() {
-    console.log(slideArr2);
     arr2.push(slideArr2[1]);
     arr2.push(slideArr2[2]);
     arr2.push(slideArr2[1].cloneNode(true)); 
@@ -70,7 +67,6 @@ function right() {
 }
 
 function setColorSlider () {
-  console.log('setColorSlider');
   if (WRAPPERSLIDER.style.backgroundColor == 'rgb(100, 139, 240)') {
     WRAPPERSLIDER.style.backgroundColor = 'rgb(240, 108, 100)';
   }
@@ -78,17 +74,17 @@ function setColorSlider () {
 }
 
 function vertical_display(){
-  let VDISPLAY = document.getElementById("vertical_display_image");
+  let VDISPLAY = document.getElementById('vertical_display_image');
   if (VDISPLAY.style.opacity == '0') {
-    VDISPLAY.style.opacity = "1";
-  } else VDISPLAY.style.opacity = "0";
+    VDISPLAY.style.opacity = '1';
+  } else VDISPLAY.style.opacity = '0';
 }
 
 function horizontal_display(){
-  let HDISPLAY = document.getElementById("horizontal_display_image");
+  let HDISPLAY = document.getElementById('horizontal_display_image');
   if (HDISPLAY.style.opacity == '0') {
-    HDISPLAY.style.opacity = "1";
-  } else HDISPLAY.style.opacity = "0";
+    HDISPLAY.style.opacity = '1';
+  } else HDISPLAY.style.opacity = '0';
 }
 
 //Portfolio image art
@@ -118,25 +114,30 @@ IMAGE_PORTFOLIO.addEventListener('click', (event) => {
 
 FORM.addEventListener('submit', (event) => {
   event.preventDefault();
-  let formSubject =  document.querySelector(".input_subject");
-  let formDetail =  document.querySelector(".textarea_detail");
+  let formSubject =  document.querySelector('.input_subject');
+  let formDetail =  document.querySelector('.textarea_detail');
 
-  let pop_up_subject_area = document.querySelector(".pop_up_subject");
-  let pop_up_text_area = document.querySelector(".pop_up_text");
+  let pop_up_subject_area = document.querySelector('.pop_up_subject');
+  let pop_up_text_area = document.querySelector('.pop_up_text');
 
   if (formSubject.value == '') {
     pop_up_subject_area.innerHTML = 'Без темы';
   } else {
-    pop_up_subject_area.innerHTML = formSubject.value;
+    pop_up_subject_area.innerHTML ='Тема: ' + formSubject.value;
   }
 
   if (formDetail.value == '') {
     pop_up_text_area.innerHTML = 'Без описания';
   } else {
-    pop_up_text_area.innerHTML = formDetail.value;
+    pop_up_text_area.innerHTML = 'Описание: ' + formDetail.value;
   }
-  document.querySelector(".pop_up_msg").style.display = "block";
+  document.querySelector('.pop_up_msg').style.display = 'block';
 }); 
+
+function pop_up_ok_btn() {
+  document.getElementById('form').reset();
+  document.querySelector('.pop_up_msg').style.display = 'none';
+}
 
 
 
