@@ -5,13 +5,39 @@ const MENU_PORTFOLIO = document.getElementById('portfolio_link');
 const IMAGE_PORTFOLIO = document.getElementById('image_art');
 const SUBMIT_BTN = document.getElementById('submit');
 const FORM = document.getElementById('form');
+const BLOCKS = document.querySelectorAll('section, footer');
 
 ////Header
 
 MENU.addEventListener('click', (event) => {
   MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
   event.target.classList.add('active');
+  BLOCKS.forEach(el => {
+    if (event.target.dataset.ref === el.getAttribute('id')) {
+      console.log(event.target.dataset.ref);
+      console.log(el.getAttribute('id'));
+      window.scroll({top:el.offsetTop - 95});
+    }    
+  }); 
+
 }); 
+
+document.addEventListener('scroll', onscroll);
+
+function onscroll () {
+  const curPos = window.scrollY;
+  BLOCKS.forEach(el => {
+    el.getAttribute('id');
+    if (el.offsetTop - header.offsetHeight <= curPos && el.offsetTop + el.offsetHeight - header.offsetHeight > curPos) {
+      MENU.querySelectorAll('a').forEach(a => {
+        a.classList.remove('active');
+        if (el.getAttribute('id') === a.dataset.ref) {
+          a.classList.add('active');
+        }        
+      });
+    }   
+  });  
+}
 
 ////Slider
 
@@ -32,46 +58,53 @@ function draw(arr) {
   }
 }
   
-function left() { 
-  setColorSlider();
-  let arr2 = [];
-  let offset2 = -1; 
-  let slideArr2 = document.querySelectorAll('.slide');
-  for (let i=0; i < slideArr2.length; i++){
-    slideArr2[i].style.left = offset2*1020 - 1020 + 'px';
-    offset2++;  
-  }   
-  setTimeout(function() {
-    arr2.push(slideArr2[1]);
-    arr2.push(slideArr2[2]);
-    arr2.push(slideArr2[1].cloneNode(true)); 
-    draw(arr2);
-  },500);  
-  }
+arrow_left.addEventListener('click',  left);
+arrow_right.addEventListener('click', right);
 
-function right() {   
-  setColorSlider();
-   let arr2 = [];
-   let offset2 = -1; 
-   let slideArr2 = document.querySelectorAll('.slide');
-   for (let i=0; i < slideArr2.length; i++){
-    slideArr2[i].style.left = offset2*1020 + 1020 + 'px';
-    offset2++;  
-    } 
+  function left() { 
+    arrow_left.removeEventListener('click',  left);
+    let arr2 = [];
+    let offset2 = -1; 
+    let slideArr2 = document.querySelectorAll('.slide');
+    for (let i=0; i < slideArr2.length; i++){
+      slideArr2[i].style.left = offset2*1020 - 1020 + 'px';
+      offset2++;  
+    }  
+    setColorSlider();
+    setTimeout(function() {      
+      arr2.push(slideArr2[1]);
+      arr2.push(slideArr2[2]);
+      arr2.push(slideArr2[1].cloneNode(true)); 
+      draw(arr2); 
+      arrow_left.addEventListener('click',  left);     
+    },700);
+    }
+
+  function right() {  
+    arrow_right.removeEventListener('click',  right); 
+    let arr2 = [];
+    let offset2 = -1; 
+    let slideArr2 = document.querySelectorAll('.slide');
+    for (let i=0; i < slideArr2.length; i++){
+      slideArr2[i].style.left = offset2*1020 + 1020 + 'px';
+      offset2++;  
+      } 
+    setColorSlider();
     setTimeout(function() {
-    arr2.push(slideArr2[1]);
-    arr2.push(slideArr2[2]);
-    arr2.push(slideArr2[1].cloneNode(true)); 
-    draw(arr2);      
-  },500);  
-}
-
-function setColorSlider () {
-  if (WRAPPERSLIDER.style.backgroundColor == 'rgb(100, 139, 240)') {
-    WRAPPERSLIDER.style.backgroundColor = 'rgb(240, 108, 100)';
+      arr2.push(slideArr2[1]);
+      arr2.push(slideArr2[2]);
+      arr2.push(slideArr2[1].cloneNode(true)); 
+      draw(arr2); 
+      arrow_right.addEventListener('click', right);      
+    },700);
   }
-  else WRAPPERSLIDER.style.backgroundColor = 'rgb(100, 139, 240)';  
-}
+
+  function setColorSlider () {
+    if (WRAPPERSLIDER.style.backgroundColor == 'rgb(100, 139, 240)') {
+      WRAPPERSLIDER.style.backgroundColor = 'rgb(240, 108, 100)';
+    }
+    else WRAPPERSLIDER.style.backgroundColor = 'rgb(100, 139, 240)';  
+  }
 
 function vertical_display(){
   let VDISPLAY = document.getElementById('vertical_display_image');
