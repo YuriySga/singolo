@@ -61,50 +61,50 @@ function draw(arr) {
 arrow_left.addEventListener('click',  left);
 arrow_right.addEventListener('click', right);
 
-  function left() { 
-    arrow_left.removeEventListener('click',  left);
-    let arr2 = [];
-    let offset2 = -1; 
-    let slideArr2 = document.querySelectorAll('.slide');
-    for (let i=0; i < slideArr2.length; i++){
-      slideArr2[i].style.left = offset2*1020 - 1020 + 'px';
-      offset2++;  
-    }  
-    setColorSlider();
-    setTimeout(function() {      
-      arr2.push(slideArr2[1]);
-      arr2.push(slideArr2[2]);
-      arr2.push(slideArr2[1].cloneNode(true)); 
-      draw(arr2); 
-      arrow_left.addEventListener('click',  left);     
-    },700);
-    }
-
-  function right() {  
-    arrow_right.removeEventListener('click',  right); 
-    let arr2 = [];
-    let offset2 = -1; 
-    let slideArr2 = document.querySelectorAll('.slide');
-    for (let i=0; i < slideArr2.length; i++){
-      slideArr2[i].style.left = offset2*1020 + 1020 + 'px';
-      offset2++;  
-      } 
-    setColorSlider();
-    setTimeout(function() {
-      arr2.push(slideArr2[1]);
-      arr2.push(slideArr2[2]);
-      arr2.push(slideArr2[1].cloneNode(true)); 
-      draw(arr2); 
-      arrow_right.addEventListener('click', right);      
-    },700);
+function left() { 
+  arrow_left.removeEventListener('click',  left);
+  let arr2 = [];
+  let offset2 = -1; 
+  let slideArr2 = document.querySelectorAll('.slide');
+  for (let i=0; i < slideArr2.length; i++){
+    slideArr2[i].style.left = offset2*1020 - 1020 + 'px';
+    offset2++;  
+  }  
+  setColorSlider();
+  setTimeout(function() {      
+    arr2.push(slideArr2[1]);
+    arr2.push(slideArr2[2]);
+    arr2.push(slideArr2[1].cloneNode(true)); 
+    draw(arr2); 
+    arrow_left.addEventListener('click',  left);     
+  },700);
   }
 
-  function setColorSlider () {
-    if (WRAPPERSLIDER.style.backgroundColor == 'rgb(100, 139, 240)') {
-      WRAPPERSLIDER.style.backgroundColor = 'rgb(240, 108, 100)';
-    }
-    else WRAPPERSLIDER.style.backgroundColor = 'rgb(100, 139, 240)';  
+function right() {  
+  arrow_right.removeEventListener('click',  right); 
+  let arr2 = [];
+  let offset2 = -1; 
+  let slideArr2 = document.querySelectorAll('.slide');
+  for (let i=0; i < slideArr2.length; i++){
+    slideArr2[i].style.left = offset2*1020 + 1020 + 'px';
+    offset2++;  
+    } 
+  setColorSlider();
+  setTimeout(function() {
+    arr2.push(slideArr2[1]);
+    arr2.push(slideArr2[2]);
+    arr2.push(slideArr2[1].cloneNode(true)); 
+    draw(arr2); 
+    arrow_right.addEventListener('click', right);      
+  },700);
+}
+
+function setColorSlider () {
+  if (WRAPPERSLIDER.style.backgroundColor == 'rgb(100, 139, 240)') {
+    WRAPPERSLIDER.style.backgroundColor = 'rgb(240, 108, 100)';
   }
+  else WRAPPERSLIDER.style.backgroundColor = 'rgb(100, 139, 240)';  
+}
 
 function vertical_display(){
   let VDISPLAY = document.getElementById('vertical_display_image');
