@@ -14,9 +14,7 @@ MENU.addEventListener('click', (event) => {
   event.target.classList.add('active');
   BLOCKS.forEach(el => {
     if (event.target.dataset.ref === el.getAttribute('id')) {
-      console.log(event.target.dataset.ref);
-      console.log(el.getAttribute('id'));
-      window.scroll({top:el.offsetTop - 95});
+      window.scroll({top: el.offsetTop - 88});
     }    
   }); 
 

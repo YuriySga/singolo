@@ -16,19 +16,22 @@ html {
 
 body {
   margin: 0 auto;
-  width: 1020px;
+  max-width: 1020px;
 }
 
-.header {
+
+
+/* .header {
   position: fixed;
   z-index: 101;
   top: 0px;
-}
+  width: 1020px;
+} */
 
 .wrapper_header {
   position: relative;
   display: flex;
-  width: 1020px;
+  width: 100%;
   height: 89px;    
   background-color: #2d303a;
   justify-content: space-between;
@@ -47,10 +50,11 @@ body {
 .wrapper_slider {
   overflow: hidden;
   position: relative;
-  width: 1020px;
+  width: 100%;
   height: 600px;
   background-color: #f06c64;
   transition: background-color 0.5s ease;
+  border-bottom: 6px solid #ea676b;
 }
 
 nav {
@@ -268,7 +272,8 @@ h2 {
   height:27px;  
   position: absolute;
   top: 287px;
-  left: 42px;
+ /*  left: 42px; */
+  left: 4.1%;
   z-index: 100;
 }
 
@@ -279,7 +284,8 @@ h2 {
   height:27px; 
   position: absolute;
   top: 287px;
-  left: 964px;
+  /* left: 964px; */
+  right: 4.1%;
   transform: rotate(180deg);
   z-index: 100;
 }
@@ -288,8 +294,8 @@ h2 {
   display: block;
   z-index: 6;
   position: absolute;
-  top: 180px;
-  left: 425px;
+  top: 121px;
+  left: 314px;
   width: 458px;
   height: 216px;
   
@@ -299,8 +305,8 @@ h2 {
   display: block;
   z-index: 6;
   position: absolute; 
-  top: 59px;
-  left: 112px;
+  top: 0px;
+  left: 1px;
   width: 216px;
   height: 458px;
 }
@@ -338,16 +344,37 @@ h2 {
 }
 
 .iphones_slide1 {
-  position: absolute;
+  position: relative;
   top: 59px;
-  left: 111px;
+  /*left: 111px; */
   user-select: none;
+  margin: auto;
+
+  width: 798px;
+  height: 483px;
+  display: block;
+  background-image: url('./assets/task_dom/slide-1_phone.png');
+  background-repeat: no-repeat;
 }
 
-.iphones_slide2 {
+/* .iphones_slide2 {
   position: absolute;
   top: 49px;
   left: 252px
+} */
+
+.iphones_slide2 {
+  user-select: none;
+  display: block;
+  width: 517px;
+  height: 513px;
+  position: relative;
+  top: 49px;
+  margin: auto;
+  
+  background-image: url('./assets/task_dom/slide-2_phone.png');
+  background-repeat: no-repeat;
+
 }
 
 .slide2 {
@@ -362,8 +389,8 @@ h2 {
   position: absolute;
   width: 188px;
   height: 333px;
-  top: 124px;
-  left: 126px;
+  top: 65px;
+  left: 15px;
   overflow: hidden;
   background-image: url('assets/task_dom/display_vertical.png');
   background-repeat: no-repeat;
@@ -377,8 +404,8 @@ h2 {
   position: absolute;
   width: 333px;
   height: 188px;
-  top: 194px;
-  left: 485px;
+  top: 135px;
+  left: 374px;
   overflow: hidden;
   background-image: url('assets/task_dom/display_horizontal.png');
   background-repeat: no-repeat;
@@ -407,14 +434,14 @@ h2 {
   background-color: #f2f2f2f2;  
 }
 
-.slider-bottom {
+/* .slider-bottom {
   z-index: 1;
   top: 600px;
   position: absolute;
   width: 100%;
   height: 6px;
   background-color: #ea676b;
-}
+} */
 
 .our_services h1 + p {
   padding-top: 21px;
@@ -1100,3 +1127,113 @@ input::placeholder, textarea::placeholder {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
+
+
+
+
+@media (min-width: 1020px) {
+  .header {
+    position: fixed;
+    z-index: 101;
+    top: 0px;
+    width: 1020px;
+  }
+
+  .slider {
+    width: 1020px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1019px) {
+  .header {
+    position: fixed;
+    z-index: 101;
+    top: 0px;
+    width: 100%;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .wrapper_slider {
+    height: 452px;
+
+  }
+
+  .arrow_left {
+    top: 212px;
+  }
+
+  .arrow_right {
+    top: 212px;
+  }
+
+  .iphones_slide1 {
+    margin: auto;
+    top: 41px;
+   /*  left: 11%; */
+
+    width: 600px;
+    height: 365px;
+    display: block;
+    background-image: url('./assets/task_dom/slide_phone_768.png');
+    background-repeat: no-repeat;
+  }
+
+  .vertical_display_image {
+    width: 143px;
+    height: 252px;
+    top: 49px;
+    left: 10px;
+    overflow: hidden;
+    background-image: url('assets/task_dom/phone-vertical-display_768.png');
+    background-repeat: no-repeat;
+     background-position-x: 0px;
+    background-position-y: 0px; 
+  }
+  
+  .horizontal_display_image {
+    width: 251px;
+    height: 143px;
+    top: 103px;
+    left: 280px;
+    overflow: hidden;
+    background-image: url('assets/task_dom/phone-horizontal-display_768.png');
+    background-repeat: no-repeat;
+     background-position-x: 0px;
+    background-position-y: 0px;
+   }
+
+   .vertical_sensor {
+    top: 1px;
+    left: 0px;
+    width: 162px;
+    height: 344px;
+  }
+
+  .horizontal_sensor {
+    top: 93px;
+    left: 236px;
+    width: 344px;
+    height: 162px;
+  }
+
+  .iphones_slide2 {
+    width: 374px;
+    height: 371px;
+    top: 49px;
+    margin: auto;
+    
+    background-image: url('./assets/task_dom/slide-2_phone_768.png');
+  
+  }
+
+
+    
+  
+
+   
+}
+
+
