@@ -696,6 +696,7 @@ h2 {
   /* padding-left: 40px; */
   background-color: #f2f2f2;
   padding-top: 62px;
+  border-bottom: 6px solid #ffffff;
 }
 
 .about_title {  
@@ -828,21 +829,16 @@ h2 {
   background-image: url('assets/social/linkedin.svg'); 
 }
 
-.about_us_bottom {
-  background-color: #ffffff;
-  height: 6px;
-}
-
-
 .wrapper_get_a_quote {
   position: relative;
-  padding-left: 40px;
+  /* padding-left: 40px; */
   background-color: #f06c64;
   color: #f0d8d9;
   height: 648px;
 }
 
 .h1_get_a_quote {
+  padding-left: 40px;
   margin-bottom: 22px;
   display: block;
   line-height: 3.0rem;
@@ -853,6 +849,7 @@ h2 {
 }
 
 .p_get_a_quote { 
+  padding-left: 40px;
   font-family: 'Lato', sans-serif;
   line-height: 3rem;
   font-size: 1.8rem;
@@ -861,13 +858,24 @@ h2 {
   margin-bottom: 44px;
 }
 
-.layout-2-column {
+/* .layout-2-column {
   display: flex;
+} */
+
+.columns_get_a_quote {
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:        
+        "a a";
+  grid-gap: 20px;
+  /* width: 980px; */
+  width: fit-content;  
 }
 
 form {
-  width: 619px; 
-  margin-right: 21px; 
+  width: 60.4vw;
+  /* width: 619px; */ 
+  /* margin-right: 21px; */ 
 }
 
 input {
@@ -911,7 +919,8 @@ input::placeholder, textarea::placeholder {
 }
 
 .contact_information {
-  width: 300px;
+  width: 29.3vw;
+  /* width: 300px; */
   text-align: justify;
 }
 
@@ -1280,6 +1289,15 @@ input::placeholder, textarea::placeholder {
  /*  .text_photo_column {
     height: 46px;
   } */
+  .get_a_quote {
+    width: 1020px;
+  }
+
+  .columns_get_a_quote {
+    grid-gap: 20px;
+    /* width: 980px; */
+    width: fit-content;  
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1019px) {
@@ -1442,6 +1460,10 @@ input::placeholder, textarea::placeholder {
   .photo_column_3 {
     height: 28.5vw;
     width: 28.5vw;
+  }
+
+  .get_a_quote {
+    width: 100%;
   }
 
   /* .text_photo_column {
