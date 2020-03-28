@@ -1682,5 +1682,38 @@ border-radius: 5px;
     margin-right: 25px;
     margin-bottom: 0px;
   }
+
+  .h1_portfolio {
+    padding-top: 50px;
+  }
+
+  .image_art {
+    height: 141.5vW;
+    max-height: 1153px;
+    display: grid;
+    width: calc(100% - 80px);
+    grid-template-areas:
+        "a a"
+        "a a"
+        "a a"
+        "a a";
+    grid-gap: 15px;
+    min-height: 530px;
+    /* width: 980px; */
+    /* margin-left: 40px;
+    margin-right: 40px; */
+   /*  width: fit-content; */
+    margin: 0 auto;
+    margin-top: 28px;
+    margin-bottom: 40px;
+  }
+
+  .image_art div:nth-child(1n+9) {
+    display: none;
+  }
+
+
+
+
 }
 
