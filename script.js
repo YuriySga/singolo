@@ -27,10 +27,10 @@ function onscroll () {
   BLOCKS.forEach(el => {
     el.getAttribute('id');
     if (el.offsetTop - header.offsetHeight <= curPos && el.offsetTop + el.offsetHeight - header.offsetHeight > curPos) {
-      MENU.querySelectorAll('a').forEach(a => {
-        a.classList.remove('active');
-        if (el.getAttribute('id') === a.dataset.ref) {
-          a.classList.add('active');
+      MENU.querySelectorAll('span').forEach(span => {
+        span.classList.remove('active');
+        if (el.getAttribute('id') === span.dataset.ref) {
+          span.classList.add('active');
         }        
       });
     }   
@@ -102,6 +102,11 @@ function setColorSlider () {
     WRAPPERSLIDER.style.backgroundColor = 'rgb(240, 108, 100)';
   }
   else WRAPPERSLIDER.style.backgroundColor = 'rgb(100, 139, 240)';  
+
+  if (WRAPPERSLIDER.style.borderBottomColor == 'rgb(68, 116, 239)') {
+    WRAPPERSLIDER.style.borderBottomColor = 'rgb(234, 103, 107)';
+  }
+  else WRAPPERSLIDER.style.borderBottomColor = 'rgb(68, 116, 239)';  
 }
 
 function vertical_display(){
