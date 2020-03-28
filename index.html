@@ -9,18 +9,20 @@
 <body>
   <header class='header' id='header'>
     <div class='wrapper_header'>
-      <div class="burger"></div>
-      <a class='logo' href='#'>SINGOLO<span>*</span></a>
+      <div class="burger_btn" onclick="burger_btn()"></div>
+      <div class="burger_menu">
+        <div class="burger_window"></div>
+      </div>
+      <a class='logo'>SINGOLO<span>*</span></a>
       <nav>
         <ul class='navigation' id='menu'>
-          <li><span class='active' data-ref="slider">HOME</span></li>  
-          <li><span data-ref="our_services">SERVICES</span></li> 
-          <li><span data-ref="portfolio"> PORTFOLIO</span></li> 
-          <li><span data-ref="about_us">ABOUT</span></li>
-          <li><span data-ref="get_a_quote">CONTACT</span></li>
+          <li><a class='active' data-ref="slider">HOME</a></li>  
+          <li><a data-ref="our_services">SERVICES</a></li> 
+          <li><a data-ref="portfolio"> PORTFOLIO</a></li> 
+          <li><a data-ref="about_us">ABOUT</a></li>
+          <li><a data-ref="get_a_quote">CONTACT</a></li>
         </ul>
       </nav>
-      <!-- <div class='header-bottom'></div> -->
     </div>      
   </header>
   <section class='slider' id='slider'>      
@@ -31,11 +33,6 @@
       </div>
       <div class='iphones' id='iphones'> 
         <div class='slide1 slide slide_position_center' id='slide1'>
-          <!-- <div class='horizontal_sensor'  onclick='horizontal_display()'></div>
-          <div class='vertical_sensor' onclick='vertical_display()'></div> -->
-          <!-- <div class='vertical_display_image' id='vertical_display_image'></div> -->
-          <!-- <div class='horizontal_display_image' id='horizontal_display_image'></div> -->
-          <!-- <img class='iphones_slide1' src='assets/task_dom/slide-1 phone.png' alt='iPhone'> -->
           <div class='iphones_slide1'>
             <div class='vertical_display_image' id='vertical_display_image'></div>
             <div class='horizontal_display_image' id='horizontal_display_image'></div>
@@ -44,7 +41,6 @@
           </div>
         </div>
         <div class='slide2 slide slide_position_right' id='slide2'>
-          <!-- <img class='iphones_slide2' src='assets/task_dom/slide-2 phone.png' alt='iPhone'> -->
           <div class='iphones_slide2'></div>
         </div>
       </div> 
@@ -55,7 +51,6 @@
       <h1>Our Services</h1>
       <p class='p1'>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <div class='layout-3-column'>
-        <!-- <div class='column_our_services service_column_1'> -->
           <div class='service service_custom_design'>
             <div>
               <div class='service__icon'>
@@ -100,9 +95,6 @@
               <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
             </div>
           </div>
-        <!-- </div> -->
-        <!-- <div class='column_our_services service_column_2'> -->
-          
           <div class='service service_support'>
             <div>
               <div class='service__icon'>
@@ -114,9 +106,6 @@
               <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
             </div>
           </div>
-        <!-- </div> -->
-        <!-- <div class='column_our_services service_column_3'> -->
-          
           <div class='service service_feel_like_a_star'>
             <div>
               <div class='service__icon'>
@@ -128,9 +117,7 @@
               <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
             </div>
           </div>
-        <!-- </div> -->
       </div>
-    <!-- <div class='our_services-bottom'></div> -->
     </div>
   </section> 
   <section class='portfolio' id='portfolio'>
@@ -162,7 +149,6 @@
         </div>
       </div>        
     </div>
-    <!-- <div class='portfolio_bottom'></div> -->
   </section>
   <section class='about_us' id='about_us'>
     <div class='wrapper_about_us'>
@@ -173,48 +159,30 @@
           <span class='photo_column_1'></span>
           <h2 class='title_photo_column'>Adam Jensen</h2>   
           <p class='text_photo_column'>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-          <!-- <div class='social_media'>              
-            <a class='social_media_link social_Facebook' href='#'></a>
-            <a class='social_media_link social_Google' href='#'></a>
-            <a class='social_media_link social_Twitter' href='#'></a>
-            <a class='social_media_link social_LinkedIn' href='#'></a>                        
-          </div> -->
         </div>
         <div class='column_about_us column_2'>
           <span class='photo_column_2'></span>
           <h2 class='title_photo_column'>Desmond Miles</h2>
           <p class='text_photo_column'>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-          <!-- <div class='social_media'>              
-            <a class='social_media_link social_Facebook' href='#'></a>
-            <a class='social_media_link social_Google' href='#'></a>
-            <a class='social_media_link social_Twitter' href='#'></a>
-            <a class='social_media_link social_LinkedIn' href='#'></a>                        
-          </div> -->
         </div>
         <div class='column_about_us column_3'>
           <span class='photo_column_3'></span>
           <h2 class='title_photo_column'>Scolara Visari</h2>
           <p class='text_photo_column'>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-          <!-- <div class='social_media'>              
-            <a class='social_media_link social_Facebook' href='#'></a>
-            <a class='social_media_link social_Google' href='#'></a>
-            <a class='social_media_link social_Twitter' href='#'></a>
-            <a class='social_media_link social_LinkedIn' href='#'></a>                        
-          </div> -->
         </div> 
-        <div class='social_media'>              
+        <div class='social_media soc_med1'>              
           <span class='social_media_link social_Facebook'></span>
           <span class='social_media_link social_Google'></span>
           <span class='social_media_link social_Twitter'></span>
           <span class='social_media_link social_LinkedIn'></span>                        
         </div>
-        <div class='social_media'>              
+        <div class='social_media soc_med2'>              
           <span class='social_media_link social_Facebook'></span>
           <span class='social_media_link social_Google'></span>
           <span class='social_media_link social_Twitter'></span>
           <span class='social_media_link social_LinkedIn'></span>                        
         </div>
-        <div class='social_media'>              
+        <div class='social_media soc_med3'>              
           <span class='social_media_link social_Facebook'></span>
           <span class='social_media_link social_Google'></span>
           <span class='social_media_link social_Twitter'></span>

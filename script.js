@@ -6,6 +6,7 @@ const IMAGE_PORTFOLIO = document.getElementById('image_art');
 const SUBMIT_BTN = document.getElementById('submit');
 const FORM = document.getElementById('form');
 const BLOCKS = document.querySelectorAll('section, footer');
+const BURGER = document.querySelector('.burger_menu');
 
 ////Header
 
@@ -14,27 +15,52 @@ MENU.addEventListener('click', (event) => {
   event.target.classList.add('active');
   BLOCKS.forEach(el => {
     if (event.target.dataset.ref === el.getAttribute('id')) {
-      window.scroll({top: el.offsetTop - 88});
+      window.scroll({top: el.offsetTop - header.offsetHeight});
     }    
   }); 
-
+  if (BURGER.style.display === 'block') {
+    burger_btn ();
+  }
 }); 
 
 document.addEventListener('scroll', onscroll);
 
-function onscroll () {
+function onscroll () { 
   const curPos = window.scrollY;
   BLOCKS.forEach(el => {
     el.getAttribute('id');
     if (el.offsetTop - header.offsetHeight <= curPos && el.offsetTop + el.offsetHeight - header.offsetHeight > curPos) {
-      MENU.querySelectorAll('span').forEach(span => {
-        span.classList.remove('active');
-        if (el.getAttribute('id') === span.dataset.ref) {
-          span.classList.add('active');
+      MENU.querySelectorAll('a').forEach(a => {
+        a.classList.remove('active');
+        if (el.getAttribute('id') === a.dataset.ref) {
+          a.classList.add('active');
         }        
       });
     }   
   });  
+}
+
+function burger_btn (){
+  let logo = document.querySelector('.logo');
+  let wrapper_header = document.querySelector('.wrapper_header');
+  let burger_button = document.querySelector('.burger_btn');
+  let nav = document.querySelector('nav');
+
+    if (burger_button.classList.contains("burger_btn_rotate")) { 
+      logo.style.left = '';     
+      BURGER.style.display = 'none';
+      burger_button.classList.remove('burger_btn_rotate');
+      nav.style.display = '';
+      //wrapper_header.style.justifyContent = 'center';
+      return;
+    }
+
+  BURGER.style.display = 'block';
+  burger_button.classList.add('burger_btn_rotate');
+  nav.style.display = 'block';
+  //wrapper_header.style.justifyContent = 'left';
+  logo.style.left = '75px';
+  
 }
 
 ////Slider
