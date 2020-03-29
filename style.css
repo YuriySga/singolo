@@ -165,9 +165,6 @@ h2 {
   
   display: grid; 
 }
-.service {
-  margin: auto;
-}
 
 .service__icon {
   margin-top: 2px;
@@ -645,7 +642,6 @@ h2 {
   letter-spacing: -0.1px;
   overflow: hidden;
   width: 100%;
-  /* height: 60px; */
 }
 
 .column_1 {
@@ -1071,9 +1067,9 @@ input::placeholder, textarea::placeholder {
   color: #f06c64;
 }
 
-/* .navigation a:hover {
+.navigation a:hover {
   color: #f06c64;
-} */
+}
 
 .window_pop_up_msg {
   display: block;
@@ -1187,7 +1183,7 @@ input::placeholder, textarea::placeholder {
         "a a a a"
         "a a a a"
         "a a a a";
-    grid-gap: 15px;
+    grid-gap: 10px;
     grid-row-gap: 15px;
     margin-left: 40px;
     margin-right: 40px;
@@ -1253,11 +1249,11 @@ input::placeholder, textarea::placeholder {
   }
 
   .arrow_left {
-    top: 212px;
+    top: 217px
   }
 
   .arrow_right {
-    top: 212px;
+    top: 217px;
   }
 
   .iphones_slide1 {
@@ -1364,9 +1360,9 @@ input::placeholder, textarea::placeholder {
         "a a a"
         "a a a"
         "a a a";
-    grid-gap: 15px;
-    height: 104.5vW;
-    min-height: 795px;
+    grid-gap: 10px;
+    height: 101vW;
+    min-height: 775px;
     max-height: 1080px;
     margin: 0 auto;
     margin-top: 28px;
@@ -1470,8 +1466,13 @@ input::placeholder, textarea::placeholder {
     background-repeat: no-repeat;
   }
 
-  .burger_btn_rotate {
+  .burger_btn_rotate_right {
     transform: rotate(90deg);
+    transition: transform 0.5s ease;
+  }
+
+  .burger_btn_rotate_left {
+    transform: rotate(0deg);
     transition: transform 0.5s ease;
   }
 
@@ -1496,18 +1497,19 @@ input::placeholder, textarea::placeholder {
   }
 
   .arrow_left {
-    top: 90px;
+    top: 100px;
     background: url('assets/task_dom/arrow-left_375.png') no-repeat;
     width: 14px;
     height:25px;  
-    left: 4.1%;
+    left: 2.5%;
   } 
 
   .arrow_right {
     background: url('assets/task_dom/arrow-left_375.png') no-repeat;
-    top: 90px;
+    top: 100px;
     width: 14px;
     height:25px; 
+    right: 2.5%;
   }
 
   .iphones_slide1 {
@@ -1603,7 +1605,7 @@ input::placeholder, textarea::placeholder {
   }
 
   .image_art {
-    height: 141.5vW;
+    height: 137.5vW;
     max-height: 1153px;
     display: grid;
     width: calc(100% - 60px);
@@ -1612,8 +1614,9 @@ input::placeholder, textarea::placeholder {
         "a a"
         "a a"
         "a a";
-    grid-gap: 15px;
-    min-height: 530px;
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+    min-height: 515px;
     margin: 0 auto;
     margin-top: 28px;
     margin-bottom: 40px;
@@ -1774,7 +1777,17 @@ input::placeholder, textarea::placeholder {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 374px) {
+  .burger_btn_rotate_right {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+  }
+
+  .burger_btn_rotate_left {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+  }
+
   .logo { 
     left: calc(50% - 46px);   
     font-size: 2.0rem;
@@ -1851,10 +1864,6 @@ input::placeholder, textarea::placeholder {
     height: 70px;
   }
 
-  nav {
-    display: none;
-  }
-
   .burger {
     display: block;
     position: absolute;
@@ -1875,18 +1884,19 @@ input::placeholder, textarea::placeholder {
   }
 
   .arrow_left {
-    top: 90px;
+    top: 100px;
     background: url('assets/task_dom/arrow-left_375.png') no-repeat;
     width: 14px;
     height:25px;  
-    left: 4.1%;
+    left: 2.5%;
   } 
 
   .arrow_right {
     background: url('assets/task_dom/arrow-left_375.png') no-repeat;
-    top: 90px;
+    top: 100px;
     width: 14px;
-    height:25px; 
+    height:25px;
+    right: 2.5%; 
   }
 
   .iphones_slide1 {

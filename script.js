@@ -46,17 +46,19 @@ function burger_btn (){
   let burger_button = document.querySelector('.burger_btn');
   let nav = document.querySelector('nav');
 
-    if (burger_button.classList.contains("burger_btn_rotate")) { 
+    if (burger_button.classList.contains("burger_btn_rotate_right")) { 
       logo.style.left = '';     
       BURGER.style.display = 'none';
-      burger_button.classList.remove('burger_btn_rotate');
+      burger_button.classList.remove('burger_btn_rotate_right');
+      burger_button.classList.add('burger_btn_rotate_left');
       nav.style.display = '';
       //wrapper_header.style.justifyContent = 'center';
       return;
     }
 
   BURGER.style.display = 'block';
-  burger_button.classList.add('burger_btn_rotate');
+  burger_button.classList.remove('burger_btn_rotate_left');
+  burger_button.classList.add('burger_btn_rotate_right');
   nav.style.display = 'block';
   //wrapper_header.style.justifyContent = 'left';
   logo.style.left = '75px';
