@@ -1,6 +1,6 @@
 @font-face { 
-  font-family: "Lato";
-  src: url(assets/fonts/Lato-Regular.ttf) format("truetype");
+  font-family: 'Lato';
+  src: url(assets/fonts/Lato-Regular.ttf) format('truetype');
 }
 
 * {
@@ -117,73 +117,73 @@ body {
 }
 
 .image_art_1 {
-  background-image: url("assets/img_art/art1.png");
+  background-image: url('assets/img_art/art1.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_2 {
-  background-image: url("assets/img_art/art2.png");
+  background-image: url('assets/img_art/art2.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_3 {
-  background-image: url("assets/img_art/art3.png");
+  background-image: url('assets/img_art/art3.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_4 {
-  background-image: url("assets/img_art/art4.png");
+  background-image: url('assets/img_art/art4.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_5 {
-  background-image: url("assets/img_art/art5.png");
+  background-image: url('assets/img_art/art5.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_6 {
-  background-image: url("assets/img_art/art6.png");
+  background-image: url('assets/img_art/art6.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_7 {
-  background-image: url("assets/img_art/art7.png");
+  background-image: url('assets/img_art/art7.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_8 {
-  background-image: url("assets/img_art/art8.png");
+  background-image: url('assets/img_art/art8.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_9 {
-  background-image: url("assets/img_art/art9.png");
+  background-image: url('assets/img_art/art9.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_10 {
-  background-image: url("assets/img_art/art10.png");
+  background-image: url('assets/img_art/art10.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_11 {
-  background-image: url("assets/img_art/art11.png");
+  background-image: url('assets/img_art/art11.png');
   width: 220px;
   height: 187px;
 }
 
 .image_art_12 {
-  background-image: url("assets/img_art/art12.png");
+  background-image: url('assets/img_art/art12.png');
   width: 220px;
   height: 187px;
 }
@@ -234,21 +234,21 @@ body {
 
 .photo_column_1 {
   display:block;
-  background-image: url("assets/photo/adam_jensen.svg");
+  background-image: url('assets/photo/adam_jensen.svg');
   width: 300px;
   height: 300px;
 }
 
 .photo_column_2 {
   display:block;
-  background-image: url("assets/photo/desmond_miles.svg");
+  background-image: url('assets/photo/desmond_miles.svg');
   width: 300px;
   height: 300px;
 }
 
 .photo_column_3 {
   display:block;
-  background-image: url("assets/photo/scolara_visari.svg");
+  background-image: url('assets/photo/scolara_visari.svg');
   width: 300px;
   height: 300px;
 }
@@ -292,19 +292,19 @@ body {
 }
 
 .social_Facebook {
-  background-image: url("assets/social/facebook.svg");  
+  background-image: url('assets/social/facebook.svg');  
 }
 
 .social_Google {
-  background-image: url("assets/social/google+.svg");
+  background-image: url('assets/social/google+.svg');
 }
 
 .social_Twitter {
-  background-image: url("assets/social/twitter.svg");
+  background-image: url('assets/social/twitter.svg');
 }
 
 .social_LinkedIn {
-  background-image: url("assets/social/linkedin.svg"); 
+  background-image: url('assets/social/linkedin.svg'); 
 }
 
 .about_us_bottom {

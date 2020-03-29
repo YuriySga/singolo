@@ -1,6 +1,6 @@
 @font-face { 
-  font-family: "Lato";
-  src: url(assets/fonts/Lato-Regular.ttf) format("truetype");
+  font-family: 'Lato';
+  src: url(assets/fonts/Lato-Regular.ttf) format('truetype');
 }
 
 * {
@@ -81,7 +81,7 @@ nav {
 
 .navigation li:nth-child(1)::after { 
   position: absolute;
-  content: "·"; 
+  content: '·'; 
   left: 50px;
   cursor: default;
   color: #494e62;
@@ -89,7 +89,7 @@ nav {
 
 .navigation li:nth-child(2)::after { 
   position: absolute;
-  content: "·"; 
+  content: '·'; 
   cursor: default;
   color: #494e62;
   left: 67px;
@@ -97,7 +97,7 @@ nav {
 
 .navigation li:nth-child(3)::after { 
   position: absolute;
-  content: "·"; 
+  content: '·'; 
   cursor: default;
   color: #494e62;
   left: 79px;
@@ -105,14 +105,14 @@ nav {
 
 .navigation li:nth-child(4)::after { 
   position: absolute;
-  content: "·"; 
+  content: '·'; 
   cursor: default;
   color: #494e62;
   left: 55px;
 }
 
 .navigation li:last-child::after {
-  content: "";
+  content: '';
 }
 
 .logo {
@@ -164,7 +164,7 @@ h2 {
 }
 
 .icon_pen {   
-  background-image: url("assets/pen.svg");
+  background-image: url('assets/pen.svg');
   background-repeat:no-repeat;
   width: 33px;
   height: 33px;
@@ -173,7 +173,7 @@ h2 {
 }
 
 .icon_star {   
-  background-image: url("assets/star.svg");
+  background-image: url('assets/star.svg');
   background-repeat:no-repeat;
   width: 34px;
   height: 32px;
@@ -182,7 +182,7 @@ h2 {
 }
 
 .icon_heart {   
-  background-image: url("assets/heart.svg");
+  background-image: url('assets/heart.svg');
   background-repeat: no-repeat;
   width: 34px;
   height: 30px;
@@ -191,7 +191,7 @@ h2 {
 }
 
 .icon_bubble {   
-  background-image: url("assets/bubble.svg");
+  background-image: url('assets/bubble.svg');
   background-repeat: no-repeat;
   width: 34px;
   height: 30px;
@@ -200,7 +200,7 @@ h2 {
 }
 
 .icon_lamp {   
-  background-image: url("assets/bulb.svg");
+  background-image: url('assets/bulb.svg');
   background-repeat: no-repeat;
   width: 24px;
   height: 36px;
@@ -209,7 +209,7 @@ h2 {
 }
 
 .icon_phone {   
-  background-image: url("assets/phone.svg");
+  background-image: url('assets/phone.svg');
   background-repeat: no-repeat;
   width: 27px;
   height: 36px;
@@ -248,7 +248,7 @@ h2 {
 
 .arrow_left {
   display: block;
-  background: url("assets/chev.svg") no-repeat;
+  background: url('assets/chev.svg') no-repeat;
   width: 16px;
   height:27px;  
   position: absolute;
@@ -258,7 +258,7 @@ h2 {
 
 .arrow_right {
   display: block;
-  background: url("assets/chev.svg") no-repeat;
+  background: url('assets/chev.svg') no-repeat;
   width: 16px;
   height:27px; 
   position: absolute;
